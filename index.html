@@ -11,7 +11,7 @@
       color: #222;
       margin: 0;
       padding: 0;
-      font-size: 13px;
+      font-size: 12px;
     }
     nav {
       background: #f0f4f5;
@@ -83,7 +83,7 @@
       letter-spacing: 2px;
     }
     header p {
-      font-size: 13px;
+      font-size: 12px;
       color: #555;
       max-width: 700px;
       margin: 0 auto;
@@ -108,7 +108,7 @@
     }
     .intro p {
       color: #555;
-      font-size: 13px;
+      font-size: 12px;
       max-width: 700px;
       margin: 0 auto;
       white-space: pre-line;
@@ -243,7 +243,7 @@
       border-top: 1px solid #ccc;
     }
     .social-footer p {
-      font-size: 13px;
+      font-size: 11px;
       margin-bottom: 10px;
       color: #444;
     }
@@ -269,6 +269,34 @@
       color: #555;
       padding: 20px;
     }
+
+    /* Banner rolando discreto */
+    .banner-rolando {
+      width: 100%;
+      overflow: hidden;
+      background-color: #fffbea;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 4px 0;
+      position: relative;
+      z-index: 10000;
+    }
+
+    .banner-rolando p {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: rolarTexto 18s linear infinite;
+      color: #444;
+      font-size: 11px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    @keyframes rolarTexto {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
   </style>
 </head>
 <body>
@@ -286,6 +314,9 @@
       <li><a href="contatos.html">Contatos</a></li>
     </ul>
   </nav>
+  <div class="banner-rolando">
+    <p>🚫 Não temos loja física – os pedidos são feitos online 💻 e a retirada é com horário marcado 📦</p>
+  </div>
 
   <header>
     <img class="logo" src="https://i.postimg.cc/SRGRvDzh/file-00000000b69061f8ae80cb7ce110477f-1-1.png" alt="Logo MugShopp" />
@@ -383,7 +414,6 @@
         <li>✓ Retire ou receba em casa</li>
       </ul>
     </section>
-
     <div class="feedback-link">
       <a href="https://g.page/r/CS9Wjb4xq5aJEBE/review" target="_blank" rel="noopener noreferrer">
         <img src="https://i.postimg.cc/V6tZJkhv/five-golden-stars-client-excellent-evaluation-after-use-product-service-concept-by-3d-render.png" alt="Avaliação Google" />
